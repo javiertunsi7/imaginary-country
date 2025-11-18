@@ -1,0 +1,313 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Linux Libertine', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #202122;
+    background-color: #f8f9fa;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Header Wikipedia */
+.wikipedia-header {
+    background: white;
+    border-bottom: 1px solid #a2a9b1;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 5px 10px;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    width: 300px;
+}
+
+.search-box button {
+    padding: 5px 15px;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    background: white;
+    padding: 20px;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.article-header {
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.article-header h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: #54595d;
+    font-size: 0.9rem;
+}
+
+/* Infobox */
+.infobox {
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    width: 300px;
+}
+
+.infobox-title {
+    background: #eaecf0;
+    text-align: center;
+    padding: 8px;
+    margin: -15px -15px 10px -15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.infobox-image {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.infobox-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.infobox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.infobox th {
+    text-align: left;
+    padding: 4px 8px 4px 0;
+    vertical-align: top;
+    width: 40%;
+    font-weight: normal;
+}
+
+.infobox td {
+    padding: 4px 0;
+    vertical-align: top;
+}
+
+.infobox-section {
+    background: #eaecf0;
+    text-align: center;
+    padding: 5px;
+    margin: 8px -15px;
+    font-weight: bold;
+}
+
+/* Content Sections */
+.toc {
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 15px;
+    margin: 20px 0;
+    float: right;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.toc-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content-section {
+    margin-bottom: 30px;
+}
+
+.content-section h2 {
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.content-section h3 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin: 15px 0 10px 0;
+}
+
+/* References */
+.references {
+    font-size: 0.9rem;
+    color: #54595d;
+}
+
+.references ol {
+    margin-left: 2em;
+}
+
+.reference {
+    font-size: 0.8rem;
+    vertical-align: super;
+    color: #0645ad;
+}
+
+/* Footer */
+.wikipedia-footer {
+    background: white;
+    border-top: 1px solid #a2a9b1;
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #54595d;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #0645ad;
+    text-decoration: none;
+}
+
+/* Estilos específicos para contenido */
+.bandera-img {
+    width: 200px;
+    height: 120px;
+    background: linear-gradient(to bottom, #8b4513 33%, #2d5016 33%, #2d5016 66%, #daa520 66%);
+    border: 1px solid #a2a9b1;
+    margin: 0 auto 10px auto;
+    position: relative;
+}
+
+.bandera-simbolo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.bandera-texto {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .toc {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .infobox {
+        width: 100%;
+    }
+    
+    .search-box input {
+        width: 200px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Estilos para listas y texto */
+.content-section ul {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.content-section li {
+    margin-bottom: 0.5em;
+}
+
+.content-section p {
+    margin-bottom: 1em;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para tablas dentro del contenido */
+.content-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+.content-section th,
+.content-section td {
+    border: 1px solid #a2a9b1;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.content-section th {
+    background: #eaecf0;
+    font-weight: bold;
+}
